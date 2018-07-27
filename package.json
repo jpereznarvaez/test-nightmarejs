@@ -1,0 +1,14 @@
+{
+    "name": "test-nightmarejs",
+    "version": "1.0.0",
+    "description": "use NightMarejs",
+    "dependencies": {
+        "nightmare": "^2.8.1"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "start": "node index.js"
+    },
+    "author": "jpereznarvaez",
+    "license": "ISC"
+}
