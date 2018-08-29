@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "description": "use NightMarejs",
     "dependencies": {
+        "jimp": "^0.3.9",
         "nightmare": "^2.8.1"
     },
     "devDependencies": {},
