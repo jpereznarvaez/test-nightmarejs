@@ -15,12 +15,12 @@ const puppeteer = require('puppeteer');
       height: 600
     });
 
-    await page.goto('https://github.com');
+    await page.goto('https://evercheck.com/');
     await page.waitForSelector(
-      'body > div.application-main > div.py-6.py-sm-8.jumbotron-codelines > div > div > div.col-md-7.text-center.text-md-left > h1'
+      'body > div.hero.will-load.wl-static.loaded > div > div > div.col-md-6.content-side.will-load.wl-from-bottom.loaded > h1'
     );
 
-    await page.screenshot({ path: './Puppeteer-github.png' });
+    await page.screenshot({ path: './Puppeteer-evercheck.png' });
 
     console.timeEnd('puppeteerTime');
 
@@ -38,11 +38,11 @@ const puppeteer = require('puppeteer');
 
   await nightmare
     .viewport(1024, 600)
-    .goto('https://github.com')
+    .goto('https://evercheck.com/')
     .wait(
-      'body > div.application-main > div.py-6.py-sm-8.jumbotron-codelines > div > div > div.col-md-7.text-center.text-md-left > h1'
+      'body > div.hero.will-load.wl-static.loaded > div > div > div.col-md-6.content-side.will-load.wl-from-bottom.loaded > h1'
     )
-    .screenshot('./Nightmare-github.png')
+    .screenshot('./Nightmare-evercheck.png')
     .end()
     .then(function() {
       console.log('Nightmare Done!');
