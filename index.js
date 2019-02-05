@@ -21,9 +21,9 @@ const puppeteer = require('puppeteer');
     );
 
     await page.screenshot({ path: './Puppeteer-evercheck.png' });
+    await page.close();
 
     console.timeEnd('puppeteerTime');
-
     console.error('Puppeteer Error:', err);
   } catch (e) {}
 })();
